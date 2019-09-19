@@ -1,0 +1,15 @@
+<!-- <p>log works!</p> -->
+
+<p>Login Form</p>
+<form [formGroup]="loginForm">
+    Email id:
+    <input type="text" name="emailid" formControlName="t1" placeholder="Enter Email-id">
+    <br/><br>
+    Password:
+    <input type="password" name="passwd" formControlName="t2" placeholder="Enter Password">
+    <br/><br>
+    Password:
+    <input type="password" name="passwd" formControlName="t2" placeholder="Enter Password">
+    <br/><br>
+<button (click)="login(loginForm)">Save</button>
+</form>

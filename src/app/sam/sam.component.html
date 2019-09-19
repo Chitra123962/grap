@@ -1,0 +1,20 @@
+<!-- <p>sam works!</p> -->
+<div class="color">
+    <table class="table table-striped" width=100%>
+      
+          <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>country_id</th>
+            
+          </tr>
+      
+        <tr *ngFor="let state of country">
+          <td>{{ state.id }}</td>
+          <td>{{ state.name }}</td>
+          <td>{{ state.country_id }}</td>
+         
+        </tr>
+      
+    </table>
+  </div>

@@ -1,0 +1,30 @@
+
+<!-- <p>{{ gamesTable}}</p>
+<p>{{gam}}</p> -->
+<P>{{a}}</P>
+<div class="color">
+    <table class="table table-striped" width=100%>
+      
+          <tr>
+            <th>Title</th>
+            <th>Bg_color</th>
+            <th> Bg_image</th>
+            <th> Skill_id</th>
+            <th> Games_list</th>
+            <th> Theme</th>
+            <th>Theme_noaction</th>
+          </tr>
+      
+        <tr *ngFor="let ab of b">
+          <td [title]="ab.title">{{ ab.title }}</td>
+          <td [title]="ab.bg_color">{{ ab.bg_color}}</td>
+          <td [title]="ab.bg_image">{{ ab.bg_image}}</td>
+          <td [title]="ab.skill_id">{{ ab.skill_id }}</td>
+          <td [title]="ab.games_list">{{ ab.games_list }}</td>
+          <td [title]="ab.theme">{{ ab.theme }}</td>
+          <td [title]="ab.theme_noaction">{{ ab.theme_noaction}}</td>
+         
+        </tr>
+      
+    </table>
+  </div>

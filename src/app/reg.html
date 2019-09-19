@@ -1,0 +1,82 @@
+<html>
+    <title>Reg</title>
+    <h1>Login</h1>
+    <style>
+    table, th, td {
+  border: 1px solid black;
+}</style>
+    <body style="border-style:double;border-width:30px;text-align:center;background-color:lightskyblue">
+        
+        <form>
+            
+                    <!-- <div id="result"></div> -->
+                    <script>
+                        function sendData(){
+                        
+                        var Obj={
+                        Name:document.getElementById('a1').value,
+                        email:document.getElementById('a2').value,
+                        mobile:document.getElementById('a3').value,
+                        gender:document.getElementById('a4').value,
+                        state:document.getElementById('a5').value,
+                        password:document.getElementById('a6').value,
+                        
+                        }
+                        console.log(Obj);
+                        localStorage.setItem("personDetails", JSON.stringify(Obj));
+                        var getData=JSON.parse(localStorage.getItem('personDetails'))
+                        console.log('getDatainLocal',getData);
+                        
+                        document.getElementById('name1').value=getData.name
+                        document.getElementById('email1').value=getData.email
+                        document.getElementById('mobile1').value=getData.mobile
+                        
+                        document.getElementById('gender1').value=getData.gender
+                        document.getElementById('state1').value=getData.state
+                        document.getElementById('password1').value=getData.password
+                        }
+             </script>
+                            
+
+            <center>
+            <table class="center" width="500" border-style="10px solid" align="center" cellspacing="2" bordercolor="#000000" bgcolor="#ff0000">
+    <tr><td>Name:
+        <td>
+            <input type="text" name="name" id="a1"></td></tr>
+    <tr><td>Email:
+        <td>
+            <input type="text" name="name" id="a2"></td></tr>
+    <tr><td>Mobile:
+        <td>
+            <input type="number" name="name" id="a3"></td> </tr>
+    <tr><td>Gender:
+        <td>
+                <select id="a4">
+                        <option>gender</option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                    </select>
+    <tr><td>State:
+        <td>
+            <input type="text" name="name" id="a5"></td></tr>
+    <tr><td>Password: 
+        <td>
+            <input type="password" name="pwd"  maxlength="15" id="a6"></td></tr>
+        </table>
+        <button type="button" onclick="sendData()">S
+            ubmit</button>
+            </center>
+        
+        </form>
+        <hr>
+Name:<input id="name1">
+Email:<input id="email1">
+Mobile:<input id="mobile1">
+Gender:<input id="gender1">
+State:<input id="state1">
+Password:<input id="password1">
+
+
+
+    </body>
+</html>

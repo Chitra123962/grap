@@ -1,0 +1,28 @@
+<!-- <p class="one">sample works!</p> -->
+
+<div class="color">
+    <table class="table table-striped" width=100%>
+      
+          <tr>
+            <th>Title</th>
+            <th>Bg_color</th>
+            <th> Bg_image</th>
+            <th> Skill_id</th>
+            <th> Games_list</th>
+            <th> Theme</th>
+            <th>Theme_noaction</th>
+          </tr>
+      
+        <tr *ngFor="let ab of gamesArray ">
+          <td>{{ ab.title }}</td>
+          <td>{{ ab.bg_color}}</td>
+          <td>{{ ab.bg_image}}</td>
+          <td>{{ ab.skill_id }}</td>
+          <td>{{ ab.games_list }}</td>
+          <td>{{ ab.theme }}</td>
+          <td>{{ ab.theme_noaction}}</td>
+         
+        </tr>
+      
+    </table>
+  </div>

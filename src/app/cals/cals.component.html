@@ -1,0 +1,20 @@
+<!-- <p>cals works!</p> -->
+<p>Welocome to Calculator!!!!</p>
+<div class="meme">
+   <div class="meme-header">CalCuLatoR</div>
+   <div class="meme-body">
+       <div class="form-group d-flex flex-row justify-content-md-between">
+  First number:         <input [(ngModel)]='num1' type="number" name="num1" class="form-control"><br/><br/>
+  Second number:         <input [(ngModel)]='num2' type="number" name="num2" class="form-control"><br/><br/>
+           </div>
+           <div class="">
+               <button class="btn btn-success" (click)="add()">SuMMM</button>&nbsp;&nbsp;
+               <button class="btn btn-primary" (click)="sub()">SuBBB</button>&nbsp;&nbsp;
+               <button class="btn btn-danger" (click)="mul()">MuLLL</button>&nbsp;&nbsp;
+               <button class="btn btn-warning" (click)="div()">DiVVV</button>
+            </div>
+</div>
+<div class="meme-footer">
+    <h4>The sum of {{num1}} and {{num2}} is {{result}}</h4>
+</div>
+</div>
